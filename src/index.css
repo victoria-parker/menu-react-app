@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header{
+    width: 100%;
+    height: 175px;
+    background-image: url('https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.title h1{
+    font-size: 5rem;
+}
+.underline{
+    width: 80%;
+    height: .2rem;
+    background-color:burlywood;
+    margin: auto;
+}
+.categories-btn-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+.categories-btn-container button{
+    background: transparent;
+    border: 2px solid burlywood;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    padding: .75rem;
+}
+
+.menu-item-container{
+    max-width: 500px;
+    border: 2px solid burlywood;
+}
+.menu-item-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.active-category{
+    background-color: burlywood !important;
+    color: white !important;
+    font-weight: bold;
+}
+.menu-container{
+    display: grid;
+    gap: 2rem;
+}
+footer{
+    background-color: #6F4E20;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80px;
+}
+@media screen and (min-width:1075px) {
+    .menu-container{
+        grid-template-columns: 1fr 1fr;
+    }
 }
