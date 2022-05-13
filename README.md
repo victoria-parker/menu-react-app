@@ -13,4 +13,4 @@ Built with:
 * JS
 
 ## Demo
-available soon
+Available at https://victoria-parker.github.io/menu-react-app/
