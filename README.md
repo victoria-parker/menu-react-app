@@ -9,7 +9,6 @@ The project consist of a menu that can be filtered by its categories. The menu c
 Built with:
 * React
 * CSS3
-* HTML5
 * JS
 
 ## Demo
